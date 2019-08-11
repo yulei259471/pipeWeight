@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CPipeWeight</class>
+ <widget class="QWidget" name="CPipeWeight">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1045</width>
+    <height>746</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CPipeWeight</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>511</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>主杆重量</string>
+   </property>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>471</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>主杆数据</string>
+    </property>
+    <widget class="QTableWidget" name="tableWidget_mainpipe">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>451</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>451</width>
+       <height>16777215</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>230</y>
+       <width>158</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QPushButton" name="pushButton_mainpipeadd">
+        <property name="text">
+         <string>增加一行</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_mainpipesub">
+        <property name="text">
+         <string>删除一行</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>472</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>尺寸规则</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_size">
+       <item>
+        <property name="text">
+         <string>边对边</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>楞对楞</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>计算规则</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_method">
+       <item>
+        <property name="text">
+         <string>按外皮</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>按芯线</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>按内皮</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>截面形状</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_shape">
+       <item>
+        <property name="text">
+         <string>圆形</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>正四边形</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>正六边形</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>正八边形</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>正十二边形</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>正十六边形</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>340</y>
+     <width>511</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>法兰重量</string>
+   </property>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>471</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>法兰数据</string>
+    </property>
+    <widget class="QTableWidget" name="tableWidget_flange">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>451</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>451</width>
+       <height>16777215</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>230</y>
+       <width>158</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_7">
+      <item>
+       <widget class="QPushButton" name="pushButton_flangeadd">
+        <property name="text">
+         <string>增加一行</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_flangesub">
+        <property name="text">
+         <string>删除一行</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>461</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>计算规则</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_flangemethod">
+       <item>
+        <property name="text">
+         <string>方板</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>方减圆</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>圆减圆</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>圆减多边形</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>圆盘</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>主杆截面形式（边对边）</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_flangeshape">
+       <item>
+        <property name="text">
+         <string>正四边形</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>正六边形</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>正八边形</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>正十二边形</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>正十六边形</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_5">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>670</y>
+     <width>201</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>系统参数</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>171</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>材料重度</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_Gama"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_6">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>340</y>
+     <width>501</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>加劲板重量</string>
+   </property>
+   <widget class="QGroupBox" name="groupBox_7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>481</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>加劲板数据</string>
+    </property>
+    <widget class="QTableWidget" name="tableWidget_flat">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>461</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>600</width>
+       <height>16777215</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>230</y>
+       <width>158</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_8">
+      <item>
+       <widget class="QPushButton" name="pushButton_flatadd">
+        <property name="text">
+         <string>增加一行</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_flatsub">
+        <property name="text">
+         <string>删除一行</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>20</y>
+      <width>401</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>计算规则</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_platemethod">
+       <item>
+        <property name="text">
+         <string>裁剪板</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>方板</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>加劲板形式</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_plateshape">
+       <item>
+        <property name="text">
+         <string>切角</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>倒角</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>双切角</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>双倒角</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_pic">
+       <property name="text">
+        <string>加劲板示意图</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_8">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>10</y>
+     <width>501</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>管状横担重量</string>
+   </property>
+   <widget class="QGroupBox" name="groupBox_9">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>471</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>管状横担数据</string>
+    </property>
+    <widget class="QTableWidget" name="tableWidget_arm">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>451</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>451</width>
+       <height>16777215</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>231</y>
+       <width>158</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QPushButton" name="pushButton_armadd">
+        <property name="text">
+         <string>增加一行</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_armsub">
+        <property name="text">
+         <string>删除一行</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>451</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_9">
+     <item>
+      <widget class="QLabel" name="label_11">
+       <property name="text">
+        <string>尺寸规则</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_armsize">
+       <item>
+        <property name="text">
+         <string>边对边</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>楞对楞</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string>计算规则</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_armmethod">
+       <item>
+        <property name="text">
+         <string>按外皮</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>按芯线</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>按内皮</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>截面形状</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_armshape">
+       <item>
+        <property name="text">
+         <string>圆形</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>正四边形</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>正六边形</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>正八边形</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>670</y>
+     <width>101</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="pushButton_caculation">
+      <property name="text">
+       <string>计算</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_output">
+      <property name="text">
+       <string>输出计算书</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
